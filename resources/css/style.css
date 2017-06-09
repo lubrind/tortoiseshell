@@ -1,0 +1,286 @@
+html{
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+
+.page-width{
+  width:960px;
+}
+
+.navbar, .information h2{
+  font-size: 1rem;
+}
+
+
+.navbar, .navbar a, .information h2{
+  color:white;
+}
+
+.navbar, .information h2{
+  background-color: cadetblue;
+}
+
+.logo img, .footer img{
+  height:1.5rem;
+}
+
+.logo, li{
+  padding-left: 2rem;
+}
+
+.logo h2, .footer h3{
+  padding-left: 1rem;
+}
+
+header, .services{
+  padding-bottom: 3rem;
+}
+
+/*flex settings*/
+.flex-container{
+  display:flex;
+}
+
+.flex-end{
+  justify-content: flex-end;
+}
+
+header, section, .single-service, .information{
+  flex-direction: column;
+}
+
+.services, footer{
+  justify-content: center;
+}
+
+.navbar, .single-service{
+  justify-content: space-between;
+}
+
+
+.footer{
+  justify-content: flex-start;
+}
+
+header, .navbar, .logo, section, .single-service, footer, .footer{
+  align-items: center;
+}
+/*Header*/
+header{
+  height:30rem;
+  width:100%;
+  background-image: url('../images/glasses-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*nav bar*/
+
+.navbar{
+  margin-top: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+nav{
+  padding-right: 2rem;
+}
+
+li{
+  list-style-type: none;
+  display: inline;
+}
+
+li a{
+  text-decoration: none;
+}
+
+nav h2{
+  display:none;
+}
+
+.tagline{
+  background-color: white;
+  margin-right: -2rem;
+  margin-top: 10rem;
+}
+
+h1{
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding:1.5rem 5rem;
+}
+
+/*services*/
+
+.services{
+  padding-top: 3rem;
+}
+.single-service:nth-child(n+2){
+  padding-left: 6rem;
+}
+
+.single-service{
+  height:8rem;
+  width:5rem;
+  text-align: center;
+}
+
+.single-service img{
+  width:3.5rem;
+}
+
+.single-service:nth-child(n+2) img{
+  width: 5rem;
+}
+
+/*information*/
+
+.information{
+  width:35%;
+  padding-right: 5%;
+  margin-bottom:5rem;
+}
+
+.information h2{
+  padding: .5rem 0 .5rem 1.25rem;
+  width:10rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+
+/*footer*/
+.footer{
+  background-color: azure;
+  padding: 4rem;
+}
+
+
+/*Tablet Size Screen*/
+
+@media only screen and (max-width:960px){
+  .page-width{
+    width:100%;
+  }
+
+  header{
+    height:22rem;
+  }
+
+  .navbar{
+    margin:0;
+  }
+
+  .tagline{
+    margin-right:2rem;
+    margin-top: 5rem;
+  }
+
+  h1{
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    line-height: 1.2;
+  }
+
+  .information{
+    padding-left:5%;
+    padding-right:0;
+    }
+
+}
+
+/*cell phone and small screens*/
+
+@media only screen and (max-width:640px)
+{
+  .logo h2,nav ul, .footer h3{
+    display:none;
+  }
+
+  header, .services{
+    margin-bottom: 3.77rem;
+  }
+
+  .single-service, .information p{
+    font-size: .77rem;
+  }
+
+
+  .services, .about{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer{
+    justify-content: center;
+  }
+
+
+
+  header{
+    background-position: 20%;
+    height:17rem;
+  }
+
+  nav h2{
+    display: block;
+    text-decoration: none;
+  }
+
+  .tagline{
+    margin-right: 0;
+    margin-top: 9rem;
+    width:100%;
+
+  }
+
+  h1{
+    font-size: 1rem;
+    text-align: center;
+    padding:1rem 0;
+    line-height: 1.2;
+
+  }
+
+
+.single-service:nth-child(n+2){
+  padding:0;
+}
+
+.single-service{
+  margin-bottom:1.54rem;
+  height:auto;
+}
+
+.single-service img{
+  margin-bottom: .77rem;
+}
+
+
+.information{
+  width:100%;
+  margin-bottom: 4rem;
+
+}
+
+.information h2{
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+.footer{
+  padding:4rem 0;
+}
+
+
+
+}
